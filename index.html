@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Iftala Zahri Sukmana</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tugas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tugas 1</a></li>
+                <li><a class="dropdown-item" href="#">Tugas 2</a></li>
+                <li><a class="dropdown-item" href="#">Tugas 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="p-5 mb-4 text-bg-dark border rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Tugas 1</h1>
+          <p class="col-md-8 fs-4">Memasukkan seluruh tag HTML yang ada.</p>
+          <button class="btn btn-primary btn-lg" type="button">
+            Lihat Tugas
+          </button>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-body-secondary border rounded-3">
+        <div class="container-fluid py-5">
+          <h2 class="display-5">Table</h2>
+          <p class="col-md-8 fs-4">
+            Table pada HTML menggunakan tag <code>table</code> untuk
+            diinisialisasi, dengan kode sebagai berikut
+          </p>
+
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="col-md-8 fs-4">
+            Didalam tag table sendiri, terdapat beberapa tag tambahan yang
+            mendefinisikan struktur dari table, seperti <code>th</code>,
+            <code>tr</code>, <code>thead</code>, <code>tbody</code>, dan
+            lainnya.
+          </p>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-body-secondary border rounded-3">
+        <div class="container-fluid py-5">
+          <h2 class="display-5">Forms</h2>
+          <p class="col-md-8 fs-4">
+            HTML memiliki tag sendiri untuk mengontrol sekaligus mengumpulkan
+            input text, beberapa diantaranya adalah <code>form</code>,
+            <code>textarea</code>, <code>input</code>, dan lainnya. Dibawah ini
+            adalah contoh form pada HTML.
+          </p>
+          <div class="p-2 mb-3 mt-3">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailDescribe"
+                />
+                <div id="emailDescribe" class="form-text">
+                  Input ini memiliki tipe <code>email</code>, dimana dikhususkan
+                  untuk menyimpan format email dan bisa dilakukan modifikasi
+                  khusus.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label fw-bold"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="passwordDescribe"
+                />
+                <div id="passwordDescribe" class="form-text">
+                  Input ini memiliki tipe <code>password</code>. Tipe ini
+                  dirancang agar ketika pengguna memasukkan inputan, maka
+                  karakter password yang bersifat rahasia akan diganti
+                  menggunakan titik-titik untuk menjaga privasi.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="select" class="form-label fw-bold"
+                  >Pilih Mata Kuliah</label
+                >
+                <select
+                  class="form-select"
+                  aria-label="select example"
+                  aria-describedby="selectDescribe"
+                >
+                  <option selected>Daftar Mata Kuliah</option>
+                  <option value="1">Pemrograman Web</option>
+                  <option value="2">Matematika Diskrit</option>
+                  <option value="3">Aljabar Linear</option>
+                  <option value="4">Jaringan Komputer</option>
+                  <option value="5">Sistem Basis Data</option>
+                </select>
+                <div id="selectDescribe" class="form-text">
+                  Ketika dihadapkan dengan beberapa pilihan pada inputan,
+                  developer dapat menggunakan tag <code>select</code> yang
+                  menggabungkan pilihan menjadi satu dropdown. Masing-masing
+                  baris memiliki nilai tersendiri yang tentunya meski menjadi
+                  satu inputan, komputer akan mengenali nilai-nilai yang berbeda
+                  pada masing-masing pilihan.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="radio" class="form-label fw-bold">Radio</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Pilihan 1
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Pilihan 2
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Pilihan 3
+                  </label>
+                </div>
+                <div id="radioDescribe" class="form-text">
+                  <code>Radio</code> memiliki kemiripan dengan checkbox. Radio
+                  dipakai ketika pengguna diharuskan untuk memilih satu dari
+                  beberapa pilihan
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="textarea" class="form-label fw-bold"
+                  >Textarea</label
+                >
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                  ></textarea>
+                  <label for="floatingTextarea"
+                    >Tambahkan komentar anda disini</label
+                  >
+                </div>
+                <div id="textareaDescribe" class="form-text">
+                  <code>Textarea</code> pada sebuah form umum dipakai untuk
+                  menampung sebuah data yang lebih panjang dan memungkinkan
+                  pengguna untuk menulis secara multi-line dan menekan tombol
+                  ENTER.
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <div id="textareaDescribe" class="form-text">
+                Button submit diatas ditujukan untuk mengirim data yang telah
+                ditampung pada form, dan dikirimkan sesuai dengan path dan HTTP
+                method (GET, POST, PUT, PATCH, dan lainnya) yang ditentukan pada
+                awal tag <code>form</code>.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="p-5 mb-4 bg-body-secondary border rounded-3">
+        <div class="container-fluid py-5">
+          <h2 class="display-5">Table</h2>
+          <p class="col-md-8 fs-4">
+            Table pada HTML menggunakan tag <code>table</code> untuk
+            diinisialisasi, dengan kode sebagai berikut
+          </p>
+
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="col-md-8 fs-4">
+            Didalam tag table sendiri, terdapat beberapa tag tambahan yang
+            mendefinisikan struktur dari table, seperti <code>th</code>,
+            <code>tr</code>, <code>thead</code>, <code>tbody</code>, dan
+            lainnya.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"
+  ></script>
+</html>
